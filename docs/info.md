@@ -9,11 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+A single CMOS inverter: ua[0] is its input and ua[1] its output.
 
 ## How to test
 
-Explain how to use your project
+Drive ua[0] from 0 V to 1.8 V and watch ua[1] fall from 1.8 V to 0 V.
 
 ## External hardware
 
