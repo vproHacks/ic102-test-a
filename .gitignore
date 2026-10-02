@@ -9,3 +9,6 @@ test/sim_build
 test/__pycache__/
 test/results.xml
 test/gate_level_netlist.v
+
+# IC102-A: scratch output of make (the GDS and LEF go in gds/ and lef/)
+layout/build/
