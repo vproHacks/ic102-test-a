@@ -1,6 +1,8 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
 
-# Tiny Tapeout Analog Project Template
+# An inverter between two analog pins
+
+A practice project made from Tiny Tapeout's analog template.
 
 - [Read the documentation for project](docs/info.md)
 
