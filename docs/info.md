@@ -18,3 +18,7 @@ Drive ua[0] from 0 V to 1.8 V and watch ua[1] fall from 1.8 V to 0 V.
 ## External hardware
 
 List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+
+## Pins
+
+ua[0] is the input and ua[1] the output. Every digital output is tied to ground.
