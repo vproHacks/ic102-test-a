@@ -55,8 +55,8 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: "in (stub)"
-  ua[1]: "out (stub)"
+  ua[0]: "inverter input"
+  ua[1]: "inverter output"
   ua[2]: ""
   ua[3]: ""
   ua[4]: ""

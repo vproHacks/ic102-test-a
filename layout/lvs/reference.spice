@@ -1,0 +1,48 @@
+* layout/lvs/reference.spice: the circuit your layout should contain, for `make lvs`.
+* Written by IC102-A Lab 03 (labs/lab-03-a-layout-that-passes-precheck/start.sh).
+*
+* netgen compares this with what Magic extracts from gds/tt_um_ic102_lab05.gds. It
+* matches pins by name, devices by type and size, and nets by what they connect.
+
+* The cell from AD104 Lab 03 (spice/my_inv_sch.spice there, renamed): one NMOS
+* pulling Y down, one high-Vt PMOS pulling it up, gates tied together.
+.subckt ic102_inv A Y VPWR VGND
+XM1 Y A VGND VGND sky130_fd_pr__nfet_01v8     w=0.65 l=0.15
+XM2 Y A VPWR VPWR sky130_fd_pr__pfet_01v8_hvt w=1    l=0.15
+.ends
+
+* The tile: every pin of the 1x2 analog template, the inverter between ua[0]
+* and ua[1], and the 24 digital outputs tied to VGND. Magic reports each tie as a
+* 0-ohm resistor (extract.tcl explains why), so the reference does too.
+.subckt tt_um_ic102_lab05 VGND VDPWR ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6]
++ ui_in[7] uo_out[0] uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6]
++ uo_out[7] uio_in[0] uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6]
++ uio_in[7] uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6]
++ uio_out[7] uio_oe[0] uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6]
++ uio_oe[7] ua[0] ua[1] ua[2] ua[3] ua[4] ua[5] ua[6] ua[7] ena clk rst_n
+Xinv0 ua[0] ua[1] VDPWR VGND ic102_inv
+Rtie0 uo_out[0] VGND 0
+Rtie1 uo_out[1] VGND 0
+Rtie2 uo_out[2] VGND 0
+Rtie3 uo_out[3] VGND 0
+Rtie4 uo_out[4] VGND 0
+Rtie5 uo_out[5] VGND 0
+Rtie6 uo_out[6] VGND 0
+Rtie7 uo_out[7] VGND 0
+Rtie8 uio_out[0] VGND 0
+Rtie9 uio_out[1] VGND 0
+Rtie10 uio_out[2] VGND 0
+Rtie11 uio_out[3] VGND 0
+Rtie12 uio_out[4] VGND 0
+Rtie13 uio_out[5] VGND 0
+Rtie14 uio_out[6] VGND 0
+Rtie15 uio_out[7] VGND 0
+Rtie16 uio_oe[0] VGND 0
+Rtie17 uio_oe[1] VGND 0
+Rtie18 uio_oe[2] VGND 0
+Rtie19 uio_oe[3] VGND 0
+Rtie20 uio_oe[4] VGND 0
+Rtie21 uio_oe[5] VGND 0
+Rtie22 uio_oe[6] VGND 0
+Rtie23 uio_oe[7] VGND 0
+.ends
