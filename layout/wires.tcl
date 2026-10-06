@@ -41,9 +41,9 @@ p via2   136.7  9.9 137.3 10.5
 p via3   136.7  9.9 137.3 10.5
 
 p metal1 143.0 15.6 147.6 16.0      ;# VPWR rail, extended east
-p metal1 146.4 15.2 147.6 16.4      ;# landing pad under the VDPWR stripe
-p metal2 146.4 15.2 147.6 16.4
-p metal3 146.4 15.2 147.6 16.4
+p metal1 146.2 15.0 147.8 16.6      ;# landing pad under the VDPWR stripe
+p metal2 146.2 15.0 147.8 16.6
+p metal3 146.2 15.0 147.8 16.6
 p via1   146.7 15.5 147.3 16.1
 p via2   146.7 15.5 147.3 16.1
 p via3   146.7 15.5 147.3 16.1
