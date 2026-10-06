@@ -33,9 +33,9 @@ place ic102_inv 140 10 inv0
 # x = 146 to 148 (Part 2 of the lab sets those). Each rail runs out sideways on
 # metal1 and climbs to its stripe through a 1.2 um stack of via1, via2 and via3.
 p metal1 136.4 10.0 140.0 10.4      ;# VGND rail, extended west
-p metal1 136.4  9.6 137.6 10.8      ;# landing pad under the VGND stripe
-p metal2 136.4  9.6 137.6 10.8
-p metal3 136.4  9.6 137.6 10.8
+p metal1 136.2  9.4 137.8 11.0      ;# landing pad under the VGND stripe
+p metal2 136.2  9.4 137.8 11.0
+p metal3 136.2  9.4 137.8 11.0
 p via1   136.7  9.9 137.3 10.5
 p via2   136.7  9.9 137.3 10.5
 p via3   136.7  9.9 137.3 10.5
