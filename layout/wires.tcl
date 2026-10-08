@@ -27,6 +27,7 @@
 # to 2.55, y 1.45 to 4.17. Placed at (140, 10), so add 140 to every x and 10
 # to every y.
 place ic102_inv 140 10 inv0
+place ic102_inv 140 30 inv1   ;# second inverter, not wired yet
 
 # ------------------------------------------------------------------ supplies
 # init.tcl draws a VGND stripe from x = 136 to 138 and a VDPWR stripe from
