@@ -24,3 +24,5 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 ua[0] is the input and ua[1] the output. Every digital output is tied to ground.
 
 A 1 kHz square wave on ua[0] is enough to see the inversion on an oscilloscope.
+
+A second inverter, to make a buffer, is placed but not wired yet.
