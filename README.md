@@ -40,3 +40,7 @@ For specifications and instructions, see the [analog specs page](https://tinytap
 ## Building the layout
 
 In the IC102-A workbench, run `make`, then `make precheck` and `make lvs`.
+
+## Credits
+
+The inverter cell is AD104 Lab 03's reference cell (github.com/uoftasic/ad104).
