@@ -39,7 +39,7 @@ For specifications and instructions, see the [analog specs page](https://tinytap
 
 ## Building the layout
 
-In the IC102-A workbench, run `make`, then `make precheck` and `make lvs`.
+In the IC102-A workbench, run `make`, then `make precheck` and `make lvs`. Commit gds/ and lef/ together with the change that made them.
 
 ## Credits
 
