@@ -30,3 +30,5 @@ A second inverter, to make a buffer, is placed but not wired yet.
 The pins again: ua[0] is in, ua[1] is out.
 
 Each analog pin has less than 500 ohms of series resistance on its way to the pad, according to Tiny Tapeout's analog specs.
+
+The inverter's input threshold is roughly half of VDPWR.
