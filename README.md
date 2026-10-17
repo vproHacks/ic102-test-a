@@ -37,7 +37,7 @@ For specifications and instructions, see the [analog specs page](https://tinytap
   - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@tinytapeout](https://twitter.com/tinytapeout)
   - Bluesky [@tinytapeout.com](https://bsky.app/profile/tinytapeout.com)
 
-## Building the layout
+## Building and checking the layout
 
 In the IC102-A workbench, run `make`, then `make precheck` and `make lvs`. Commit gds/ and lef/ together with the change that made them.
 
