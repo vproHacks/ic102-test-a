@@ -15,9 +15,6 @@ A single CMOS inverter: ua[0] is its input and ua[1] its output.
 
 Drive ua[0] from 0 V to 1.8 V and watch ua[1] fall from 1.8 V to 0 V.
 
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
 
 ## Pins
 
@@ -30,3 +27,7 @@ The pins again: ua[0] is in, ua[1] is out.
 Each analog pin has less than 500 ohms of series resistance on its way to the pad, according to Tiny Tapeout's analog specs.
 
 The inverter's input threshold is a little under half of VDPWR.
+
+## External hardware
+
+A signal generator and an oscilloscope.
