@@ -2,7 +2,7 @@
 
 # An inverter between two analog pins
 
-A practice project made from Tiny Tapeout's analog template.
+A practice project made from Tiny Tapeout's analog template, for IC102-A Lab 05.
 
 - [Read the documentation for project](docs/info.md)
 
