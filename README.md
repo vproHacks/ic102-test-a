@@ -48,3 +48,5 @@ The inverter cell is AD104 Lab 03's reference cell (github.com/uoftasic/ad104).
 ## Status
 
 Precheck and LVS pass on v0.1.
+
+The gds workflow has been red since some time after v0.1.
