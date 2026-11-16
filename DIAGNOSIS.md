@@ -6,11 +6,11 @@ GitHub. Commit this file with the fix, so the entry and the commit that answers 
 ## Breakage 1
 
 - Predicted: the job that fails first, and why: docs, because its info.yaml check wants a pinout, and it is one short job; precheck's analog pin check should fail later too.
-- Run: the link to the failed run
-- Job and step that failed:
-- First error line, copied from the log:
-- Cause, in one sentence:
-- Fix, and the commit that made the run green:
+- Run: https://github.com/vproHacks/ic102-test-a/actions/runs/43830783046 (docs) and https://github.com/vproHacks/ic102-test-a/actions/runs/43830783971 (gds)
+- Job and step that failed: docs, step "Build docs" (inner step "Check info.yaml and docs/info.md"); later precheck, step "Run Tiny Tapeout Precheck", Analog pin check
+- First error line, copied from the log: `- Please fill in the 'pinout' section`
+- Cause, in one sentence: every pinout description was emptied, so docs finds no pinout and precheck finds metal on ua[0] with no description.
+- Fix, and the commit that made the run green: put the two ua descriptions back (this commit)
 
 ## Breakage 2
 
