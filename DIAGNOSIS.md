@@ -14,7 +14,7 @@ GitHub. Commit this file with the fix, so the entry and the commit that answers 
 
 ## Breakage 2
 
-- Predicted:
+- Predicted: precheck, because docs reads only info.yaml and docs/info.md, which didn't change; the analog pin check should see metal on ua[2] with analog_pins set to 2.
 - Run:
 - Job and step that failed:
 - First error line:
