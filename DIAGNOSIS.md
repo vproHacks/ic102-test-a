@@ -5,7 +5,7 @@ GitHub. Commit this file with the fix, so the entry and the commit that answers 
 
 ## Breakage 1
 
-- Predicted: the job that fails first, and why:
+- Predicted: the job that fails first, and why: docs, because its info.yaml check wants a pinout, and it is one short job; precheck's analog pin check should fail later too.
 - Run: the link to the failed run
 - Job and step that failed:
 - First error line, copied from the log:
