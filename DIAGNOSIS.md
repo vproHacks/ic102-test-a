@@ -24,11 +24,11 @@ GitHub. Commit this file with the fix, so the entry and the commit that answers 
 ## Breakage 3
 
 - Predicted: gds goes green (it copies whatever file top_module names, and the renamed one is there), then precheck fails, because the cell inside the GDS still has the old name.
-- Run:
-- Job and step that failed:
-- First error line:
-- Cause:
-- Fix, and the green commit:
+- Run: https://github.com/vproHacks/ic102-test-a/actions/runs/43832924021
+- Job and step that failed: precheck, step "Run Tiny Tapeout Precheck": KLayout Checks, Pin check, urpm/nwell check
+- First error line: `ERROR: Pin clk not found in .../tt_submission/tt_um_vprohacks_ic102_v2.lef` (after the Nix `error:` block every precheck log has)
+- Cause: top_module and the file names say tt_um_vprohacks_ic102_v2, but the cell inside the GDS and the LEF's macro are still tt_um_vprohacks_ic102.
+- Fix, and the green commit: undid the rename (this commit)
 
 ## Breakage 4
 
