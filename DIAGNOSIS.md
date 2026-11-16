@@ -42,12 +42,14 @@ GitHub. Commit this file with the fix, so the entry and the commit that answers 
 ## Breakage 5
 
 - Predicted: precheck; with uses_vapwr true it should expect a VAPWR pin, so the power pin check, and maybe the pin check against a different template.
-- Run:
-- Job and step that failed:
-- First error line:
-- Cause:
-- Fix, and the green commit:
+- Run: https://github.com/vproHacks/ic102-test-a/actions/runs/43834740766
+- Job and step that failed: precheck, step "Run Tiny Tapeout Precheck": Pin check, Boundary check, Power pin check, Analog pin check
+- First error line: `| Pin check | ❌ Fail: Inconsistent die area between LEF and template DEF: (161000, 225760) != (145360, 225760) |`
+- Cause: uses_vapwr: true makes precheck compare the tile with the narrower _3v3 template and look for VAPWR in src/project.v.
+- Fix, and the green commit: set uses_vapwr back to false (this commit)
 
 ## A mistake no workflow catches
 
 One value in your repository that would be wrong, and that every workflow would still pass:
+
+The two pinout descriptions swapped, so that ua[0] claims to be the output: precheck checks only that a used pin has a description, not what it says.
