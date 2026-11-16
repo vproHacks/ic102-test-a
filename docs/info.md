@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-A CMOS inverter between ua[0] (input) and ua[1] (output). For now the tile has only metal stubs on those two pins.
+A CMOS inverter (the AD104 Lab 03 cell) between ua[0] (input A) and ua[1] (output Y), powered from VDPWR and VGND.
 
 ## How to test
 
