@@ -23,7 +23,7 @@ GitHub. Commit this file with the fix, so the entry and the commit that answers 
 
 ## Breakage 3
 
-- Predicted:
+- Predicted: gds goes green (it copies whatever file top_module names, and the renamed one is there), then precheck fails, because the cell inside the GDS still has the old name.
 - Run:
 - Job and step that failed:
 - First error line:
