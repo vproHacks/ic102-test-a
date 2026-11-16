@@ -73,7 +73,7 @@ p mcon   142.28 13.40 142.45 13.57
 p metal1 142.165 13.285 142.565 13.685
 p via1   142.235 13.355 142.495 13.615
 # West on metal2, under the VGND stripe, to ua[1] at x = 132.49 to 133.39.
-p metal2 132.64 12.85 142.6 13.71
+p metal2 132.64 13.26 142.6 13.71
 # Up to metal4 at ua[1]'s x, then down metal4 to the pin.
 p metal2 132.64 13.18 133.24 13.78
 p metal3 132.64 13.18 133.24 13.78
