@@ -32,7 +32,7 @@ GitHub. Commit this file with the fix, so the entry and the commit that answers 
 
 ## Breakage 4
 
-- Predicted:
+- Predicted: precheck, but not in a DRC deck: a clean square on metal 5 is legal SKY130, so I expect a layer check of Tiny Tapeout's to object.
 - Run:
 - Job and step that failed:
 - First error line:
