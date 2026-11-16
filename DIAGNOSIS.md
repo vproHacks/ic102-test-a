@@ -15,11 +15,11 @@ GitHub. Commit this file with the fix, so the entry and the commit that answers 
 ## Breakage 2
 
 - Predicted: precheck, because docs reads only info.yaml and docs/info.md, which didn't change; the analog pin check should see metal on ua[2] with analog_pins set to 2.
-- Run:
-- Job and step that failed:
-- First error line:
-- Cause:
-- Fix, and the green commit:
+- Run: https://github.com/vproHacks/ic102-test-a/actions/runs/43831964719
+- Job and step that failed: precheck, step "Run Tiny Tapeout Precheck", Analog pin check
+- First error line: `| Analog pin check | ❌ Fail: Analog pin `ua[2]` is connected to some metal but `analog_pins` is set to 2 in `info.yaml`. ...`
+- Cause: a stub of metal 4 on ua[2], a pin info.yaml doesn't claim.
+- Fix, and the green commit: removed the stub and rebuilt (this commit)
 
 ## Breakage 3
 
