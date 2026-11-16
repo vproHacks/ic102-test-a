@@ -33,11 +33,11 @@ GitHub. Commit this file with the fix, so the entry and the commit that answers 
 ## Breakage 4
 
 - Predicted: precheck, but not in a DRC deck: a clean square on metal 5 is legal SKY130, so I expect a layer check of Tiny Tapeout's to object.
-- Run:
-- Job and step that failed:
-- First error line:
-- Cause:
-- Fix, and the green commit:
+- Run: https://github.com/vproHacks/ic102-test-a/actions/runs/43833875459
+- Job and step that failed: precheck, step "Run Tiny Tapeout Precheck", KLayout Checks
+- First error line: `| KLayout Checks | ❌ Fail: Forbidden layer met5.drawing found in /home/runner/work/ic102-test-a/ic102-test-a/tt_submission/tt_um_vprohacks_ic102.gds |`
+- Cause: a square on metal 5, which Tiny Tapeout's analog rules forbid in the tile even though it passes DRC.
+- Fix, and the green commit: removed the square and rebuilt (this commit)
 
 ## Breakage 5
 
