@@ -41,7 +41,7 @@ GitHub. Commit this file with the fix, so the entry and the commit that answers 
 
 ## Breakage 5
 
-- Predicted:
+- Predicted: precheck; with uses_vapwr true it should expect a VAPWR pin, so the power pin check, and maybe the pin check against a different template.
 - Run:
 - Job and step that failed:
 - First error line:
